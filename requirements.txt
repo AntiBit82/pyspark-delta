@@ -1,0 +1,7 @@
+# Core dependencies
+pyspark==3.5.0
+delta-spark==3.0.0
+
+# Additional utilities
+pyarrow>=15.0.0
+pandas>=2.2.0
