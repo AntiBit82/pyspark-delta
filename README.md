@@ -5,7 +5,7 @@ A simple Python project for working with PySpark and Delta Lake on local file sy
 
 ## Requirements
 
-- Python 3.11 or higher (Python 3.13 recommended)
+- Python 3.11.6 tested
 - Java 8 or higher (required by PySpark)
 
 
@@ -100,18 +100,4 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 ```python
 .config("spark.executor.memory", "4g")
 .config("spark.driver.memory", "4g")
-```
-
-### Delta Table Not Found
-
-**Error:** Table not found
-
-**Solution:** Ensure the path is correct. Both absolute and relative paths work:
-
-```python
-# Absolute path
-delta_path = "/tmp/my-delta-table"
-
-# Relative path (also works)
-delta_path = "./data/my-delta-table"
 ```
